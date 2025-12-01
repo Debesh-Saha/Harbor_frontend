@@ -50,7 +50,13 @@ export function Card({ title, link, type, view, onDelete }: CardProps) {
                         {title}
                     </div>
                 </div>
-                {view ? "" : <div className="flex items-center dark:text-dark-normal-text text-normal-text cursor-pointer">
+                {view ? <div className="flex items-center dark:text-dark-normal-text text-normal-text cursor-pointer">
+                    <div className="pr-2">
+                        <a href={link} target="_blank" rel="noopener noreferrer">
+                            <OpenLinkIcon size={"sm"} />
+                        </a>
+                    </div>
+                </div> : <div className="flex items-center dark:text-dark-normal-text text-normal-text cursor-pointer">
                     <div className="pr-2">
                         <a href={link} target="_blank" rel="noopener noreferrer">
                             <OpenLinkIcon size={"sm"} />
