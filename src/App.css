@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-button-blue: #5046E4;
+  --color-button-light-blue: #DFE7FE;
+  --color-button-blue-text: #E3EAFF;
+  --color-button-light-blue-text: #4F46BF;
+  
+  --color-sidebar-background: #FFFFFF;
+  --color-background: #F9FBFC;
+
+  --color-dark-sidebar-background: #2c2f33;
+  --color-dark-background: #23272a;
+
+  --color-headings-text: #222A33;
+  --color-normal-text: #979EA0;
+  --color-darker-normal-text: #6F737B;
+
+  --color-dark-headings-text: #e9ebec;
+  --color-dark-normal-text: #bdc3c6;
+  --color-dark-darker-normal-text: #929ba0;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html, body {
+  overflow-x: hidden 
+}
+
+
+
+
+
