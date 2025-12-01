@@ -13,7 +13,7 @@ export async function sharebrain(showPopup: (msg: string, type: "success" | "err
       }
     );
 
-    const shareUrl = `${FRONTEND_URL}share/${response.data.hash}`;
+    const shareUrl = `${FRONTEND_URL}/share/${response.data.hash}`;
 
     await navigator.clipboard.writeText(shareUrl);
 
